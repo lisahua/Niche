@@ -1,2 +1,3 @@
-Niche
-# Niche
+
+# NICHE: Name Inconsistency CHEcker
+
