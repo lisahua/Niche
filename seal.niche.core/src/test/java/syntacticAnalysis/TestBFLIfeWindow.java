@@ -17,7 +17,7 @@ import seal.niche.evolveAnalysis.WindowSizeChange;
  * @Date: Feb 8, 2015
  */
 public class TestBFLIfeWindow {
-	private String sourcePath = "/Users/admin/Documents/nameExample/snapshots/";
+	private String sourcePath = "/Users/UCLAPLSE/Documents/nameExample/snapshots/";
 	private String outputFolder = "/Users/admin/Documents/nameExample/workFolder/outputResult/";
 
 	private static String[] projectName = { "accumulo-1.3.5",
@@ -134,8 +134,8 @@ public class TestBFLIfeWindow {
 //	}
 	@Test
 	public void random () {
-		for (int i=0;i<100;i++) {
-			System.out.println((Math.random()+1)*0.3);
+		for (int i=0;i<40;i++) {
+			System.out.println(Math.random()*0.3);
 		}
 	}
 }

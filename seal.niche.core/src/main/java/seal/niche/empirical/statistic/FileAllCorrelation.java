@@ -163,8 +163,7 @@ public class FileAllCorrelation {
 
 			int[] list = { method, iName, cName, bf, change, bf_method,
 					nbf_method, bf_in, bf_cn, nbf_in, nbf_cn,
-					(int) (Math.random() * iName),
-					(int) (Math.random() * cName) };
+					  ic, cc };
 			String line = "";
 			for (int value : list) {
 				line += "," + value;
