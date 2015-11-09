@@ -346,10 +346,14 @@ public class CombineMethodName {
 		String line ="";
 		int in_2=0,in_1=0,in_0=0;
 		while ((line = reader.readLine()) != null) {
-			if (line.contains("1,0,1")||line.contains("1,1,0")||line.contains("1,1,1")) in_2++;
+			if (line.contains("1,0,1")||line.contains("1,1,0")||line.contains("1,1,1")) {in_2++;
+			System.out.println(line);
+			}
 			if (line.contains("1,0,0")||line.contains("0,1,0")||line.contains("0,1,1")||line.contains("0,0,1")) in_1++;
 			else in_0++;
 		}
 		System.out.println(in_2+","+in_1+","+in_0);
 	}
+	
+	
 }

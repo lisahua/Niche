@@ -126,10 +126,8 @@ public class FileAllCorrelation {
 				invokeCN.put(tokens[0], Integer.parseInt(tokens[1]));
 			}
 		} catch (Exception e) {
-
 			e.printStackTrace();
 		}
-
 	}
 
 	private void printAll(String path) {
