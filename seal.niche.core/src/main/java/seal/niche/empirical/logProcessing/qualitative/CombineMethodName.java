@@ -340,7 +340,7 @@ public class CombineMethodName {
 		writer.close();
 	}
 
-	public static void countINFiles() throws Exception {
+	public static void countINMethods() throws Exception {
 		BufferedReader reader = new BufferedReader(new FileReader(
 				ConfigUtility.outputPath + "allMethodIN.txt"));
 		String line ="";

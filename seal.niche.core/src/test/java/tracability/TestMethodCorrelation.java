@@ -6,6 +6,7 @@ import seal.niche.empirical.logProcessing.qualitative.BugFixMatching;
 import seal.niche.empirical.logProcessing.qualitative.CombineMethodName;
 import seal.niche.empirical.logProcessing.qualitative.FileBugFixConditional;
 import seal.niche.empirical.logProcessing.qualitative.InvokeMatching;
+import seal.niche.empirical.logProcessing.qualitative.QualitativeAnalysis;
 
 public class TestMethodCorrelation {
 	//@Test
@@ -17,7 +18,7 @@ public class TestMethodCorrelation {
 			// CombineMethodName.combineImpureMethods();
 			// CombineMethodName.formatImpureMethods();;
 			// CombineMethodName.combineINWithAllMethods();
-			CombineMethodName.countINFiles();
+//			CombineMethodName.countINMethods();;
 			;
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -29,7 +30,7 @@ public class TestMethodCorrelation {
 	public void testTraceBFCommit() {
 		try {
 //			 BugFixMatching.matchBFWithMethod();
-//			 BugFixMatching.countINBF();
+			 BugFixMatching.countINBF();
 			FileBugFixConditional.matchBFWithMethod();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -44,6 +45,14 @@ public class TestMethodCorrelation {
 			e.printStackTrace();
 		}
 	}
-	
+	//@Test
+		public void testTraceQuality() {
+			try {
+//				 InvokeMatching.combineInvokeCommit();;
+				QualitativeAnalysis.prepareQualitative();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 
 }
